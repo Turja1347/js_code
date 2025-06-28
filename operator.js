@@ -1,88 +1,63 @@
-// Arithmatic operators +, -, *, /, %
+// Arithmetic operators: +, -, *, /, %
+let op1 = 7 + 3;     // Addition
+let op2 = 7 - 3;     // Subtraction
+let op3 = 7 * 3;     // Multiplication
+let op4 = 7 / 3;     // Division
+let op5 = 7 % 3;     // Modulo (remainder)
 
-// Addition 
-let op1 = 7+3;
+console.log('Arithmetic operators:', op1, op2, op3, op4, op5);
 
-// Subtraction
-let op2 = 7-3;
+// Comparison operators: ==, ===, !=, !==
+let isEqual = (5 == '5');           // true (loose comparison)
+let isStrictEqual = (5 === '5');    // false (strict comparison)
+let isNotEqual = (5 != '5');        // false (loose comparison)
+let isNotStrictEqual = (5 !== '5'); // true (strict comparison)
 
-// Multiplication 
-let op3 = 7*3;
+console.log('Comparison operators:', isEqual, isStrictEqual, isNotEqual, isNotStrictEqual);
 
-// Division
-let op4 = 7/3;
+// Logical operators
+let lop1 = true && false;  // AND
+let lop2 = true || false;  // OR
+let lop3 = !true;          // NOT
 
-// Modulo 
-let op5 = 7%3;
-console.log('Arithmatic operator: ', op1, op2, op3, op4, op5)
+console.log('Logical operators:', lop1, lop2, lop3);
 
-// Comparison Operators ==, ||, !=, <=, >=
+// Combining multiple conditions using logical operators
+let age = 5;
+let isAdult = (age >= 18) && (age <= 64);
+console.log('Is adult:', isAdult);
 
-// == (euals to means value only)
-let isEqual = (5=='5') // true (loose comparison)
+// Increment / Decrement operators
+let x = 5;
 
-// == (Strict euals to means value + type)
-let isStrictEqual = (5==='5') // false (strict comparison)
+// Pre-increment: increments first, then returns value
+console.log(++x); // 6
+console.log(x);   // 6
 
-// != (not euals to means value only)
-let isNotEqual = (5!='5') // false (loose comparison)
+// Post-increment: returns current value, then increments
+console.log(x++); // 6
+console.log(x);   // 7
 
-// == (Strict not eual to means value + type)
-let isNotStrictEqual = (5!=='5') // true (strict comparison)
-console.log('Comarison operator: ', isEqual, isStrictEqual, isNotEqual)
-
-// Logical operator
-
-// && (AND)
-let lop1 = true && false ; // false ==> 1*0 = 0, 1*1=1 oterwise always zero
-
-// || (OR)
-let lop2 = true || false ; // true ==> 1*0 = 1, 0*0=0 oterwise always 1
-
-// ! (NOT) inverts the value - true becomes false , vice versa
-let lop3 = ! true // false
-
-console.log('Logical operator: ', lop1, lop2, lop3)
-
-// combining Multiple Condition
-let age =5;
-isAdult = (age >= 18) && (age <= 64);
-console.log(isAdult)
-
-let x=5;
-// Pre-increment (++i): Increments the value before using it in the expression.
-console.log(++x);
-console.log(x);
-// Post-increment (i++): Uses the current value in the expression before incrementing it.
-console.log(x++);
-console.log(x);
-
-
-// Decrement --
 let y = 6;
-// Pre-decrement (--i): Decrements the value before using it in the expression.
-console.log(--y);
-console.log(y);
-// Post-decrement (i--): Uses the current value in the expression before decrementing it.
-console.log(y--);
-console.log(y);
 
-// Managing counter
+// Pre-decrement
+console.log(--y); // 5
+console.log(y);   // 5
+
+// Post-decrement
+console.log(y--); // 5
+console.log(y);   // 4
+
+// Managing a counter
 let cartItems = 0;
-
-// add in cart
-cartItems++;
+cartItems++; // add item
+console.log(cartItems);
+cartItems--; // remove item
 console.log(cartItems);
 
-// remove items from cart 
-cartItems--;
-console.log(cartItems)
+// Array indexing with post-increment on index
+let fruits = ['apples', 'banana', 'cherry'];
+let index = 0;
 
-
-//arry indexing
-let fruits = ['apples', 'banana', 'cherry']
-let index =  0;
-console.log(fruits[index++])
-console.log(fruits[index++])
-
-
+console.log(fruits[index++]); // apples
+console.log(fruits[index++]); // banana
