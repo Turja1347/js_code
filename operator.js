@@ -1,4 +1,4 @@
-// Arithmetic operators: +, -, *, /, %
+// Arithmetic operators: +, -, *, /, % 
 let op1 = 7 + 3;     // Addition
 let op2 = 7 - 3;     // Subtraction
 let op3 = 7 * 3;     // Multiplication
